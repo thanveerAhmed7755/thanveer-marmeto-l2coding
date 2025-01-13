@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marmeto Cart Project - Level 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.2/font-awesome-animation.min.css" integrity="sha512-9bh3aIgbp8Yrc2M1SYJQ4xan5zD+aVwwy41x40nvcmy4AyoR/g7kAZJtHm1PEjSOwWShUdVzxIpJRf5vm6pofA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://s3-alpha-sig.figma.com/img/2727/769b/a74736d502746301ed573ed8940fc322?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kns4eQZvPHoCBRgLNZwIZmedrDMYvm5sXtKGCyXxnaPneqCNSf7XqoizRRiEQGa8NXT5f23ZPyPi1miVsyPVnVi65oWCsRXusjyHwd4YVbnxcimg1RFbQQmpD6EU-ZHt~hLHfmMzeQMzC7v19MLaQfIUuf1YeoQ-kWVc9VYrVrbjOXmEmqZDJ8dyBWZv6otXywnP8SzvLX9dh3zQZU3B3ZSJBkqW2~aJyuoNC9dp80zTTmBCyxlYNSDmubfi04eN0bucnCKpDZfOfF8uQRIGmPn10IhRIUTMX2IW-jEbC~CEeCq29fanwqAO~tYmgHQMjoVTpnoZUweyvprIPtG~Aw__" alt="" srcset="">
+            <h1>Marmeto</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="icons-links">
+            <ul>
+                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li><i class="fa-regular fa-heart"></i></li>
+                <li>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="node">
+            <div class="title">
+                <div class="logo">
+                    <img src="https://s3-alpha-sig.figma.com/img/2727/769b/a74736d502746301ed573ed8940fc322?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kns4eQZvPHoCBRgLNZwIZmedrDMYvm5sXtKGCyXxnaPneqCNSf7XqoizRRiEQGa8NXT5f23ZPyPi1miVsyPVnVi65oWCsRXusjyHwd4YVbnxcimg1RFbQQmpD6EU-ZHt~hLHfmMzeQMzC7v19MLaQfIUuf1YeoQ-kWVc9VYrVrbjOXmEmqZDJ8dyBWZv6otXywnP8SzvLX9dh3zQZU3B3ZSJBkqW2~aJyuoNC9dp80zTTmBCyxlYNSDmubfi04eN0bucnCKpDZfOfF8uQRIGmPn10IhRIUTMX2IW-jEbC~CEeCq29fanwqAO~tYmgHQMjoVTpnoZUweyvprIPtG~Aw__" alt="" srcset="">
+                    <h1>Cart</h1>
+                </div>
+            </div>
+            <p><span>Home ></span> Cart</p>
+        </div>
+    </div>
+    <div class="cart-section">
+     <div class="inner-cart">
+        <div class="left-node">
+            <table cellpadding="0" cellspacing="0">
+                <thead class="table-head">
+                    <tr>
+                        <td colspan="2" style="text-align: center;"><p>Product</p></td>
+                        <td><p>Price</p></td>
+                        <td><p>Quantity</p></td>
+                        <td colspan="2" style="text-align: center;"><p>Subtotal</p></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="right-node">
+            <div class="title">
+                <h1>Cart Totals</h1>
+            </div>
+            <div class="node">
+                <p>subtotal</p>
+                <p id="subtotal-price"></p>
+            </div>
+            <div class="node">
+                <p>Total</p>
+                <p id="total-price" style="color : #B88E2F"></p>
+            </div>
+            <div>
+                <button id="checkout">Check Out</button>
+            </div>
+        </div>
+     </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+
+            <div class="node">
+                <div class="logo">
+                    <img src="./image1.png" alt="">
+                </div>
+                <div>
+                    
+                    <div class="title"><h1>High Quality</h1></div>
+                    <p>
+                        crafted from top materials
+                    </p>
+                </div>
+            </div>
+            <div class="node">
+                <div class="logo">
+                    <img src="./image2.png" alt="">
+                </div>
+                <div>
+                    
+                <div class="title"><h1>Warranty Protection</h1></div>
+                <p>Over 2 years</p>
+            </div>
+        </div>
+        <div class="node">
+            <div class="logo">
+                <img src="./image3.png" alt="">
+            </div>
+            <div>
+                
+                <div class="title">
+                    <h1>Free Shipping</h1>
+                </div>
+                <p>order over 150 $</p>
+            </div>
+        </div>
+        <div class="node">
+            <div class=".logo">
+                <img src="./image4.png" class="support" alt="">
+            </div>
+            <div>
+                
+                <div class="title">
+                    <h1>24 / 7 Support</h1>
+                </div>
+                <p>Dedicated support</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+    
+    <script src="./script.js" defer></script>
+</body>
+</html>
